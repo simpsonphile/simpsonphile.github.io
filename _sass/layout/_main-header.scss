@@ -1,0 +1,46 @@
+.main-header {
+  background-image: linear-gradient(90deg, rgba(darken($color1,2),0.3), rgba(darken($color1,2),0.5));
+  margin-left: -45px;
+  margin-right: -45px;
+  padding: 0 60px;
+  height: 85px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.33);
+
+  @media screen and (max-width: 1024px){
+    box-shadow: none;
+    background-image: none;
+  }
+
+  @media screen and (max-width: 680px){
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+
+  & &-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 8.5rem;
+
+    .main-nav {
+      display: flex;
+      flex: 0 1 100%;
+      justify-content: flex-end;
+
+      @media screen and (max-width: 1024px){
+        transition: all .3s;
+        background-image: linear-gradient(90deg, darken($color1,2), darken($color1,2));
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        z-index: 100;
+        min-width: 25%;
+        justify-content: flex-start;
+      }
+    }
+  }
+}

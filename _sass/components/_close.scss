@@ -1,0 +1,14 @@
+.close {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  display: flex;
+  padding: 1rem;
+  background: $color4;
+  border-radius: 50%;
+  transition: all .5s;
+  &:active, &:hover {transform: scale(1.2); background: lighten($color5, 10);}
+  svg {width: 2.25rem; height: 2.25rem;}
+  @include box-shadow;
+  z-index: 104;
+}

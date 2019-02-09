@@ -1,0 +1,15 @@
+#about h1.heading {text-align: center; color: white;}
+#about .intro-row p {color: $color2;}
+
+#about .about-row {
+  margin-bottom: 5rem;
+  .heading {margin-bottom: 2rem; text-align: center;}
+  p {text-align: center; color: $color2;}
+}
+
+.row.heading-row {
+  margin-bottom: 3rem;
+  text-align: center;
+  .heading{color: white; text-transform: none; }
+  .heading-desc {color: $color2; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; margin-top: 1rem;}
+}

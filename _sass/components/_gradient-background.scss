@@ -1,0 +1,16 @@
+.gradient-background {
+  background: linear-gradient(to bottom, $color1, $color1, lighten($color5,10), $color4, lighten($color1,10));
+  background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.gradient-background::before {
+  content:'';
+	position: fixed;
+	top: 0;
+	bottom: 0;
+  right: 0;
+	width: 100%;
+	z-index: -1;
+	background: linear-gradient(to right bottom, rgba(255,255,255,0.2), lighten($color1, 10) 75%);
+}

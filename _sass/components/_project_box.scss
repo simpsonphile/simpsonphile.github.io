@@ -1,0 +1,129 @@
+.project_box {
+  background: $color4;
+  position: relative;
+  overflow: hidden;
+
+  .box-type-title {
+    position:absolute;
+    z-index: 3;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background: rgba($color1, 0.4);
+
+
+    span {font-size: 1.4rem;}
+    svg {width: 1.6rem; height: 1.6rem; margin-right: 5px;}
+  }
+
+  .background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size:cover;
+    z-index: 0;
+    transition: all .3s;
+  }
+
+  &:hover .background {
+    transform: scale(1.25);
+  }
+
+  &:hover .content {
+    transform: translateX(1000px);
+  }
+
+  &:hover .content-2 {
+    transform: translateX(0);
+  }
+
+
+  .content {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .3s;
+    transform: translateX(0px);
+    padding: 0 1.5rem;
+
+    .heading {
+      text-align: left;
+      font-size: 2.5rem;
+    }
+  }
+
+  .content-2{
+    position: absolute;
+    z-index:1;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1.5rem;
+    transition: all .3s;
+    transform: translateX(1000px);
+  }
+}
+
+.resume_box {
+  .background {
+    // background-image:linear-gradient(210deg, rgba($color4,0.8), rgba($color5,0.8)), url(../assets/img/grafiti.jpg);
+    // background: $color4;
+    background-image:linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url(../assets/img/designer.svg), linear-gradient(lighten($color4,10), darken($color4, 10));
+    background-size: cover;
+  }
+}
+
+.travello_box {
+  .background {
+    background-image:linear-gradient(135deg, rgba($color5,0.8), rgba($color4,0.8)), url(../assets/img/travello.png);
+  }
+}
+
+.coolsolutions_box {
+  .background {
+    background-image:linear-gradient(135deg, rgba($color5,0.8), rgba($color4,0.8)), url(../assets/img/coolsolutions.png);
+  }
+}
+
+.bbtan_box {
+  .background {
+    background-image:linear-gradient(135deg, rgba($color5,0.8), rgba($color4,0.8)), url(../assets/img/bbtan.png);
+  }
+}
+
+.spaceshipgame_box {
+  .background {
+    background-image:linear-gradient(135deg, rgba($color5,0.8), rgba($color4,0.8)), url(../assets/img/spaceship-game.png);
+  }
+}
+
+.followballs_box {
+  .background {
+    background-image:linear-gradient(135deg, rgba($color5,0.8), rgba($color4,0.8)), url(../assets/img/followballs.png);
+  }
+}
+
+.blog_box {
+  .background {
+    background: $color4;
+    background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url(../assets/img/blogging.svg), linear-gradient(lighten($color4,10), darken($color4, 10));;
+    background-size: cover;
+  // background-image:linear-gradient(290deg, rgba($color5, 0.8), rgba($color2, 0.2)), url(../assets/img/miami.jpg);
+}
+}

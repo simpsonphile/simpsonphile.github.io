@@ -1,0 +1,7 @@
+{% for styleName in page.styles %}
+<link rel="stylesheet" href="css/{{styleName}}">
+{% endfor %}
+
+{% for scriptName in page.scripts %}
+  <script src="js/{{scriptName}}"></script>
+{% endfor %}

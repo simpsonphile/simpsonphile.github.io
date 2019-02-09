@@ -1,0 +1,16 @@
+.external-link {
+  border-radius: .5rem;
+  color: inherit;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  color: #f4f4f4;
+  padding: 6px 12px;
+  svg{margin-right: 5px; fill: #f4f4f4;}
+
+  &:hover {background:  #f4f4f4; color: $color5!important;
+    svg {fill: $color5;}
+  }
+
+}

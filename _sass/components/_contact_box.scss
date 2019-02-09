@@ -1,0 +1,15 @@
+.contact_box {
+  background: $color4;
+  background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url(../assets/img/contact.svg), linear-gradient(lighten($color4,10), darken($color4, 10));;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

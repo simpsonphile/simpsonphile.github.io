@@ -1,0 +1,61 @@
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#fff;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+
+
+
+
+.show-menu-btn {display: none;}
+
+@media screen and (max-width: 1024px){
+  .show-menu-btn{
+    z-index: 101;
+    display: flex;
+    background: $color5;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    // top: 2.5rem;
+    right: 6rem;
+    @include box-shadow;
+  }
+
+  .main-nav {visibility: hidden!important; right: -500px !important; opacity: 0; transition: all .3s;}
+  #show-menu:checked ~ .main-nav {visibility: visible !important; display: flex !important; right: 0 !important; opacity: 1;}
+  #show-menu:checked ~ .show-menu-btn {position: fixed;}
+}

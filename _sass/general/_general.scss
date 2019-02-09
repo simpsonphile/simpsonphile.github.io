@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: 1200px){
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: 900px){
+    font-size: 50%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: $color1;
+  background-image: linear-gradient(170deg, lighten($color1,5), darken($color1,10));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:0px 4.5rem 3rem 4rem;
+  color: $color-white;
+  min-height: 100vh;
+
+  @media screen and (max-width: 680px){
+    padding: 0px 2rem 3rem 2rem;
+  }
+}
+
+.block-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+h1 { font-size: 3.6rem; margin: 0;}
+h2 {font-size: 2.8rem;}
+h3 {font-size: 1.8rem;}
+
+ul ul {
+  padding-top: 1rem;
+}
+
+.website-grid {
+  margin-top: 5rem;
+}
+
+img {max-width: 100%;}
+
+svg {
+  background-color: transparent;
+  fill: white;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {color: white; word-break: break-all;}
+
+::selection {background: $color4;}

@@ -1,0 +1,48 @@
+// .site-wrapper {opacity: 0;}
+// .before-load {
+//   position:fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   z-index: 1000000000;
+//   background-image: linear-gradient(170deg, lighten($color1,5), darken($color1,10));
+//   flex-direction: column;
+//   transition: all .5s;
+//   opacity: 1;
+//
+//   .letters{margin-top: 5px; display: flex; width: 30rem; justify-content: center; position: relative; top: 5rem; }
+//   .sticks{height:5rem; display: flex; width: 30rem; align-items:flex-end; justify-content: space-around; flex: 0 1 calc(90% / 7);}
+//   .sticks-bump{height:5rem; display: flex; width: 30rem; align-items:center; justify-content: space-around; flex: 0 1 calc(90% / 7); position: relative; top:5rem;}
+//   .name {width: 30rem; letter-spacing: 1.9rem; font-size: 2.5rem; text-align: center; font-weight: 300; padding-left: 1.9rem; margin-top:3rem;}
+//
+//   .letters span {font-size: 2.5rem; width: 4.25rem; text-align: center; color: white;}
+//   .letters span:nth-child(1){display: block;animation: scale 2s linear infinite;}
+//   .letters span:nth-child(2){display: block;animation: scale 2s .15s linear infinite;}
+//   .letters span:nth-child(3){display: block;animation: scale 2s .3s linear infinite;}
+//   .letters span:nth-child(4){display: block;animation: scale 2s .45s linear infinite;}
+//   .letters span:nth-child(5){display: block;animation: scale 2s .6s linear infinite;}
+//   .letters span:nth-child(6){display: block;animation: scale 2s .75s linear infinite;}
+//   .letters span:nth-child(7){display: block;animation: scale 2s .9s linear infinite;}
+//
+//   .sticks span {background: $color5; height: 1rem; margin: 0px 5px; width: 100%; border-radius: 10%;}
+//   .sticks span:nth-child(1){display: block;animation: grow-height 2s linear infinite;}
+//   .sticks span:nth-child(2){display: block;animation: grow-height 2s .15s linear infinite;}
+//   .sticks span:nth-child(3){display: block;animation: grow-height 2s .3s linear infinite;}
+//   .sticks span:nth-child(4){display: block;animation: grow-height 2s .45s linear infinite;}
+//   .sticks span:nth-child(5){display: block;animation: grow-height 2s .6s linear infinite;}
+//   .sticks span:nth-child(6){display: block;animation: grow-height 2s .75s linear infinite;}
+//   .sticks span:nth-child(7){display: block;animation: grow-height 2s .9s linear infinite;}
+//
+//   .sticks-bump span {background: $color5; height: 1rem; margin: 0px 5px; width: 100%; border-radius: 10%;}
+//   .sticks-bump span:nth-child(1){display: block;animation: bump 2s linear infinite;}
+//   .sticks-bump span:nth-child(2){display: block;animation: bump 2s .15s linear infinite;}
+//   .sticks-bump span:nth-child(3){display: block;animation: bump 2s .3s linear infinite;}
+//   .sticks-bump span:nth-child(4){display: block;animation: bump 2s .45s linear infinite;}
+//   .sticks-bump span:nth-child(5){display: block;animation: bump 2s .6s linear infinite;}
+//   .sticks-bump span:nth-child(6){display: block;animation: bump 2s .75s linear infinite;}
+//   .sticks-bump span:nth-child(7){display: block;animation: bump 2s .9s linear infinite;}
+// }

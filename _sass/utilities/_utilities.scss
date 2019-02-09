@@ -1,0 +1,41 @@
+.clearfix::before {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+
+.mar-bot-s {margin-bottom: $mar-s;}
+.mar-bot-m {margin-bottom: $mar-m;}
+.mar-bot-b {margin-bottom: $mar-b;}
+
+.mar-top-s {margin-top: $mar-s;}
+.mar-top-m {margin-top: $mar-m;}
+.mar-top-b {margin-top: $mar-b;}
+
+.mar-left-s {margin-left: $mar-s;}
+.mar-left-m {margin-left: $mar-m;}
+.mar-left-b {margin-left: $mar-b;}
+
+.mar-right-s {margin-right: $mar-s;}
+.mar-right-m {margin-right: $mar-m;}
+.mar-right-b {margin-right: $mar-b;}
+
+.mar-x-s {margin-left: $mar-s; margin-right:$mar-s;}
+.mar-x-m {margin-left: $mar-m; margin-right:$mar-m;}
+.mar-x-b {margin-left: $mar-b; margin-right:$mar-b;}
+
+.mar-y-b {margin-top: $mar-s; margin-bottom:$mar-s;}
+.mar-y-m {margin-top: $mar-m; margin-bottom:$mar-m;}
+.mar-y-b {margin-top: $mar-b; margin-bottom:$mar-b;}
+
+.float-right {
+  float: right;
+}
+
+.no-decoration-anchor {
+  color: inherit;
+  text-decoration: none;
+}
+
+.text-center {text-align: center;}

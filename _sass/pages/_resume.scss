@@ -1,0 +1,346 @@
+.resume-part {margin-bottom: 10rem;}
+.resume-right {
+  @media screen and (max-width: 850px){
+    width: calc(100% - 8rem) !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  @media screen and (max-width: 480px){
+    width: 100% !important;
+  }
+}
+.resume-left {
+   height: 100%;
+   padding-right: 2.5rem;
+   @media screen and (max-width: 850px){
+     position: absolute;
+     right: 0;
+     z-index: 99;
+     width: 180px !important;
+   }
+
+   @media screen and (max-width: 480px){
+     width: 100% !important;
+     position: static;
+     height: auto !important;
+     padding: 0;
+     margin-bottom: 4rem !important;
+     margin-left: 0 !important;
+     margin-right: 0 !important;
+   }
+ }
+.sticky-heading {
+  position: sticky;
+  top: 5rem;
+  padding: 2rem 3.5rem;
+  border-bottom-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+  @include box-shadow;
+
+  .svg-container {display: inline;}
+  h2 {display: inline;}
+
+  @media screen and (max-width: 850px) and (min-width: 481px){
+    display: flex;
+    align-items: center;
+    border-radius: unset !important;
+    padding: 0;
+    width: 100%;
+    height: 4rem;
+    background: unset !important;
+    box-shadow: none;
+    overflow: hidden;
+    &:hover h2 {right: 0;}
+    h2 {width: 100%;transition: all .3s; position: relative; right: -100%; margin-right: 3rem; font-size: 1.4rem; padding: .5rem; border-top-left-radius: 1rem; border-bottom-left-radius: 1rem;}
+    .svg-container {
+      z-index: 2;
+      display: block;
+      position: absolute;
+      right: 0;
+      border-bottom-left-radius: .8rem;
+      border-top-right-radius: .8rem;
+      width: 4rem;
+      height: 4rem;
+      display: flex; align-items: center; justify-content: center;
+    }
+  }
+
+
+
+
+
+
+  &-purple{background-image: linear-gradient(120deg, darken($color5, 7), lighten($color5, 17));
+    @media screen and (max-width: 850px) and (min-width: 481px){
+      .svg-container {
+        background-image: linear-gradient(120deg, darken($color5, 7), lighten($color5, 17));
+      }
+      h2 {
+        background-image: linear-gradient(120deg, darken($color5, 2), lighten($color5, 12));
+      }
+    }
+  }
+  &-blue {background-image: linear-gradient(120deg, darken($color4, 7), lighten($color4, 17));
+    @media screen and (max-width: 850px) and (min-width: 481px){
+      .svg-container {
+        background-image: linear-gradient(120deg, darken($color4, 7), lighten($color4, 17))
+      }
+      h2 {
+        background-image: linear-gradient(120deg, darken($color4, 2), lighten($color4, 12));
+      }
+    }
+  }
+}
+
+
+/*intro*/
+.resume-intro {
+  .grid-2-4.photo {
+    text-align: right;
+    @media screen and (max-width: 800px){
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    img {
+      border-top-left-radius: .8rem;
+      border-bottom-right-radius: .8rem;
+      @include box-shadow;
+      transform: rotate(2deg);
+      width: 100%;
+      max-width: 400px;
+      @media screen and (max-width: 800px){
+        transform: none;
+      }
+
+    }
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    margin-left: -3rem !important;
+    position: relative;
+    z-index: 2;
+    padding-top: 2rem;
+
+    @media screen and (max-width: 800px){
+      width: 100% !important;
+      margin-left: 0 !important;
+      margin-top: -10rem !important;
+      align-items: center;
+    }
+
+    &-main{
+      margin-bottom: 2.5rem;
+      margin-left: -3rem;
+      background-image: linear-gradient(120deg, darken($color5, 7), lighten($color5, 17));
+      width: fit-content;
+      padding: 2rem 3.5rem;
+      border-bottom-left-radius: .8rem;
+      border-top-right-radius: .8rem;
+      @include box-shadow;
+
+      @media screen and (max-width: 800px){
+        margin-left: 0;
+        width: 100%;
+        max-width: 500px;
+      }
+
+    }
+
+    &-links {
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      background-image: linear-gradient(120deg, darken($color4, 7), lighten($color4, 17));
+      border-bottom-right-radius: .8rem;
+      border-top-left-radius: .8rem;
+      padding: 1rem 1.75rem;
+      @include box-shadow;
+
+      @media screen and (max-width: 800px){
+        width: 100%;
+        max-width: 560px;
+      }
+
+
+      a {
+        color: white;
+        margin-bottom: .5rem;
+        text-decoration: none;
+      }
+    }
+
+    &-about {
+      text-align: justify;
+      background-image: linear-gradient(120deg, darken($color5, 7), lighten($color5, 17));
+      padding: 1rem 1.75rem;
+      border-bottom-left-radius: .8rem;
+      border-top-right-radius: .8rem;
+      @include box-shadow;
+
+      @media screen and (max-width: 800px){
+        width: 100%;
+        max-width: 560px;
+      }
+    }
+
+  }
+}
+
+
+/*work entry*/
+
+.work-entry {
+  margin-bottom: 3.5rem;
+  .work-date {font-size: 1.4rem; font-weight: 300; margin-bottom: 0.5rem; color: $color2;}
+  .work-title {font-size: 1.8rem; margin-bottom: 3rem;}
+  .work-title a {text-decoration: none; color: $color4;}
+  .work-description p {margin-bottom: 2rem;}
+  .work-description ul{padding-left: 2rem;}
+  .work-description ul li {padding: 1rem 0;}
+}
+
+.resume-part-3 .work-entry .work-description {padding-left: 0;}
+
+/*project entry*/
+
+.row .grid-1-3.project-entry-s {
+  @media screen and (max-width: 1000px){
+    width: calc(50% - #{$grid-gap} * 2);
+  }
+}
+.project-entry {
+  height:300px;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  @include box-shadow;
+
+  @media screen and (max-width: 680px){
+    width: 100% !important;
+    height: 450px;
+    max-height: 80vh;
+    float: unset !important;
+    margin: 2rem 0 !important;
+  }
+
+  .project-background, .project-gradient {
+    position: absolute; z-index: 0;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project-gradient {background-image:linear-gradient(135deg, rgba($color5,0.6), rgba($color4,0.6)); transition: all 1s; opacity: 1;}
+
+  &:hover {
+    .project-info {bottom: -20rem;}
+    .project-links{top: 0;}
+    .project-type {top: 0;}
+    .project-gradient {opacity: 0;}
+    @media screen and (max-width: 680px){
+      .project-info{bottom: 0;}
+    }
+  }
+
+  &-scroll-bg .project-background{
+    background-size: 100%;
+    background-position: top;
+    transition: 10s all;
+  }
+
+  &-scroll-bg:hover .project-background {
+    background-position:bottom;
+  }
+
+  &-anim-ken:hover .project-background{
+    animation: kenburns-bottom 5s ease-out both;
+  }
+
+  .project-info {
+    background: rgba(25, 42, 86, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    min-height:10rem;
+    transition: all .3s;
+    .project-title {
+      margin-bottom: 2rem;
+    }
+    @media screen and (max-width: 680px){
+      min-height: unset;
+    }
+  }
+
+  &-s .project-info {min-height: 50%;
+    @media screen and (max-width: 680px){
+      min-height: unset;
+    }
+  }
+
+  .project-links {
+    background: rgba(25, 42, 86, 0.6);
+    position: absolute;
+    top: -20rem;
+    left:0;
+    display: flex;
+    padding: 1rem;
+    transition: all .3s;
+    border-bottom-right-radius: .8rem;
+    a {display: block; margin: .5rem;}
+  }
+
+  .project-type {
+    background: rgba(25, 42, 86, 0.6);
+    position: absolute;
+    top: -20rem;
+    right:0;
+    padding: 1rem;
+    transition: all .3s;
+    display: flex;
+  }
+
+  &-travello .project-background {background-image: url(../assets/img/travello-full.png);}
+  &-coolsolutions .project-background {background-image:url(../assets/img/coolsolutions-full.png);}
+  &-followballs .project-background {background-image:url(../assets/img/followballs.png);}
+  &-bbtan .project-background {background-image:url(../assets/img/bbtan.png);}
+  &-spaceship-game .project-background {background-image:url(../assets/img/spaceship-game.png);}
+
+
+}
+
+
+
+/*skillset*/
+.skills-list{
+  margin-bottom: 2.5rem;
+  padding: 0 1.25rem;
+  &-container {
+    @media screen and (max-width:580px){
+      width: 100% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+  .skills-title {margin-bottom: 3.5rem;}
+  @media screen and (max-width: 580px){
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .skill{
+    margin-bottom: 3rem;
+    .skill-name h4{font-size: 1.8rem; margin-bottom: 0.5rem;}
+  }
+}

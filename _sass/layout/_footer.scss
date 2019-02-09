@@ -1,0 +1,57 @@
+.footer {
+  background-image: linear-gradient(90deg, rgba(darken($color1,2),0.3), rgba(darken($color1,2),0.5));
+  margin-bottom: -3rem;
+  margin-right: -4.5rem;
+  margin-left: -4.5rem;
+  padding: 1rem 4.5rem;
+
+  @media screen and (max-width: 680px ){
+    margin-right: -2rem;
+    margin-left: -2rem;
+    padding: 1rem 2rem;
+  }
+
+  .row {
+    @media screen and (max-width: 900px){
+      display: flex; flex-direction: column;
+    }
+    .copyright {
+      p {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+
+
+        svg {line-height: 1.2rem; width: 1.2rem; height: 1.2rem; fill: $color5; margin: 0 5px;}
+      }
+
+      @media screen and (max-width: 900px){
+        margin-top: 2rem;
+        width: 100%;
+        justify-content: center;
+        p {float: unset; display: block; text-align: center;}
+      }
+    }
+
+    .footer-menu {
+      @media screen and (max-width: 900px){
+        width: 100%;
+      }
+      ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        @media screen and (max-width: 900px){
+          justify-content: center;
+        }
+
+        li {
+          display: inline-block;
+          padding: 0 5px;
+
+          a {font-size: 9px; color: white; text-decoration: none;}
+        }
+      }
+    }
+  }
+}

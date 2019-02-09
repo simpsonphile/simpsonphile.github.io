@@ -1,0 +1,14 @@
+.right-sticky {
+  position: fixed;
+  z-index: 99;
+  bottom: 3rem; right: 3rem;
+  background: $color5;
+  padding: 1rem;
+  animation: pulsate-bck .5s ease-in infinite;
+  border-radius: .8rem;
+  @include box-shadow;
+
+  &:hover .speech-bubble {opacity: 1;}
+  .speech-bubble {position: absolute; top: -1.5rem; left: 150%; transform: translate(-100%, -100%); opacity: 0; transition: all .3s;}
+
+  }

@@ -1,0 +1,13 @@
+.cookie-information {
+  display: none; flex-direction: row; justify-content: space-between;
+  background: lighten($color1, 10);
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999999999999999;
+  padding: 2rem 3rem;
+
+  p {padding-right: 2rem; font-size: 1.2rem;}
+}

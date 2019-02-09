@@ -1,0 +1,285 @@
+<div class="contact-form" id="contact-form">
+  <a href="#" class="close-form close">
+    <svg role="img">
+      <use xlink:href="assets/sprite.svg#cross"></use>
+    </svg>
+  </a>
+
+  <div class="form-container fancy-scroll">
+    <form action="https://formspree.io/mazewski@yahoo.com" method="POST">
+      <h2 class='heading heading-underscored mar-bot-b'>Contact me</h2>
+
+      <p class="mar-bot-b">Let me make you a product or give me a job offer.</p>
+
+      <label for="name-input" name="name_label"><span>Your name</span>
+      <div class="input-with-icon">
+        <svg role="img"><use xlink:href="assets/sprite.svg#user"></use></svg>
+      <input id="name-input" type="text" name="name" required placeholder="John Kowalski">
+    </div>
+    </label>
+
+      <label for="replyto-input" name="_replyto_label"><span>Your email</span>
+      <div class="input-with-icon">
+        <svg role="img"><use xlink:href="assets/sprite.svg#envelope"></use></svg>
+        <input id="replyto-input" type="email" name="_replyto" required placeholder="example@domain.com">
+      </div>
+    </label>
+
+      <label for="subject-input" name="subject_label"><span>Title</span>
+      <div class="input-with-icon">
+        <svg role="img"><use xlink:href="assets/sprite.svg#pencil"></use></svg>
+      <select id="subject-input" name="subject" required>
+        <option value="I want website">I want website</option>
+        <option value="I need design">I need design</option>
+        <option value="I need web application">I need web application</option>
+        <option value="I want ot hire you">I want to hire you</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    </label>
+
+      <!-- Tutaj sa inputy zalezne od subject-input -->
+
+      <div class="iwantwebsite-choosed depended-inputs">
+        <p class="form-subtitle form-subtitle-bigger">because you choosed <span>I want website</span> I have a few questions:</p>
+        <div class="depended-inputs-content">
+          <div class="kind-of-website-question">
+            <p class="form-subtitle text-center">What kind of website you want?</p>
+
+            <div class="radiogroup">
+              <label for="wordpress-kind" class=radio-with-text>
+            <span class="custom-checkbox-wrapper custom-checkbox-wrapper-rounded">
+            <div for="wordpress-kind" class="custom-checkbox custom-checkbox">
+              <input type="radio" name="kind-of-website" value=wordpress-kind id=wordpress-kind hidden >
+              <span class="custom-checkbox-inside"></span>
+            </div>
+              </span>
+              <span class='radio-text'>Wordpress</span>
+            </label>
+
+              <label for="static-page-kind" class=radio-with-text>
+            <span class="custom-checkbox-wrapper custom-checkbox-wrapper-rounded">
+            <div for="static-page-kind" class="custom-checkbox custom-checkbox">
+              <input type="radio" name="kind-of-website" id=static-page-kind value=static-page-kind hidden>
+              <span class="custom-checkbox-inside"></span>
+            </div>
+              </span>
+              <span class='radio-text'>Static page</span>
+            </label>
+
+              <label for="single-page-kind" class=radio-with-text>
+            <span class="custom-checkbox-wrapper custom-checkbox-wrapper-rounded">
+            <div for="single-page-kind" class="custom-checkbox custom-checkbox">
+              <input type="radio" name="kind-of-website" id=single-page-kind value=single-page-kind hidden>
+              <span class="custom-checkbox-inside"></span>
+            </div>
+              </span>
+              <span class='radio-text'>Single page</span>
+            </label>
+            </div>
+          </div>
+
+          <div class="psd-question">
+            <p class="form-subtitle text-center">do you have PSD?</p>
+
+            <div class="radiogroup">
+              <label for="psd-yes" class=radio-with-text>
+            <span class="custom-checkbox-wrapper custom-checkbox-wrapper-rounded">
+            <div for="psd-yes" class="custom-checkbox custom-checkbox">
+              <input type="radio" name="psd" value=yes id=psd-yes hidden >
+              <span class="custom-checkbox-inside"></span>
+            </div>
+              </span>
+              <span class='radio-text'>yes</span>
+            </label>
+
+              <label for="psd-no" class=radio-with-text>
+            <span class="custom-checkbox-wrapper custom-checkbox-wrapper-rounded">
+            <div for="psd-no" class="custom-checkbox custom-checkbox">
+              <input type="radio" name="psd" id=psd-no value=no hidden>
+              <span class="custom-checkbox-inside"></span>
+            </div>
+              </span>
+              <span class='radio-text'>no</span>
+            </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ineeddesign-choosed depended-inputs">
+        <p class="form-subtitle form-subtitle-bigger">because you choosed <span>I need design</span> I have a few questions:</p>
+        <div class="depended-inputs-content">
+          <div class="psd-question">
+            <p class="form-subtitle text-center">what kind of design you want?</p>
+
+            <div class="radiogroup">
+              <label for="website-design" class=radio-with-text>
+            <span class="custom-checkbox-wrapper custom-checkbox-wrapper-rounded">
+            <div for="website-design" class="custom-checkbox custom-checkbox">
+              <input type="radio" name="design" value=website id=website-design hidden >
+              <span class="custom-checkbox-inside"></span>
+            </div>
+              </span>
+              <span class='radio-text'>website</span>
+            </label>
+
+              <label for="application-design" class=radio-with-text>
+            <span class="custom-checkbox-wrapper custom-checkbox-wrapper-rounded">
+            <div for="application-design" class="custom-checkbox custom-checkbox">
+              <input type="radio" name="design" id=application-design value=application hidden>
+              <span class="custom-checkbox-inside"></span>
+            </div>
+              </span>
+              <span class='radio-text'>application</span>
+            </label>
+
+              <label for="email-design" class=radio-with-text>
+            <span class="custom-checkbox-wrapper custom-checkbox-wrapper-rounded">
+            <div for="email-design" class="custom-checkbox custom-checkbox">
+              <input type="radio" name="design" id=email-design value=email hidden>
+              <span class="custom-checkbox-inside"></span>
+            </div>
+              </span>
+              <span class='radio-text'>email template</span>
+            </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ineedapplication-choosed depended-inputs">
+        <p class="form-subtitle form-subtitle-bigger">because you choosed <span>I need web app</span> I have a few questions:</p>
+        <div class="depended-inputs-content">
+          <div class="psd-question">
+            <p class="form-subtitle text-center">do you have PSD?</p>
+
+            <div class="radiogroup">
+              <label for="psd-yes-app" class=radio-with-text>
+            <span class="custom-checkbox-wrapper custom-checkbox-wrapper-rounded">
+            <div for="psd-yes-app" class="custom-checkbox custom-checkbox">
+              <input type="radio" name="psd" value=yes id=psd-yes-app hidden >
+              <span class="custom-checkbox-inside"></span>
+            </div>
+              </span>
+              <span class='radio-text'>yes</span>
+            </label>
+
+              <label for="psd-no-app" class=radio-with-text>
+            <span class="custom-checkbox-wrapper custom-checkbox-wrapper-rounded">
+            <div for="psd-no-app" class="custom-checkbox custom-checkbox">
+              <input type="radio" name="psd" id=psd-no-app value=no hidden>
+              <span class="custom-checkbox-inside"></span>
+            </div>
+              </span>
+              <span class='radio-text'>no</span>
+            </label>
+            </div>
+          </div>
+
+          <div class="psd-question">
+            <p class="form-subtitle text-center">Progressive Web App functionality</p>
+
+            <div class="radiogroup">
+              <label for="pwa-yes-app" class=radio-with-text>
+            <span class="custom-checkbox-wrapper custom-checkbox-wrapper-rounded">
+            <div for="pwa-yes-app" class="custom-checkbox custom-checkbox">
+              <input type="radio" name="pwa" value=yes id=pwa-yes-app hidden >
+              <span class="custom-checkbox-inside"></span>
+            </div>
+              </span>
+              <span class='radio-text'>yes</span>
+            </label>
+
+              <label for="pwa-no-app" class=radio-with-text>
+            <span class="custom-checkbox-wrapper custom-checkbox-wrapper-rounded">
+            <div for="pwa-no-app" class="custom-checkbox custom-checkbox">
+              <input type="radio" name="pwa" id=pwa-no-app value=no hidden>
+              <span class="custom-checkbox-inside"></span>
+            </div>
+              </span>
+              <span class='radio-text'>no</span>
+            </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row project-date">
+        <div class="grid-2-4">
+          <label for="start-date"><span>Project aprox start date</span>
+          <span class="input-with-icon">
+            <svg role="img"><use xlink:href="assets/sprite.svg#calendar-full"></use></svg>
+            <input type="text" id='start-date' placeholder="Sun Jul 15 2018" name='project-start-date' readonly>
+          </span>
+          </label>
+        </div>
+
+        <div class="grid-2-4">
+          <label for="end-date"><span>Project aprox end date</span>
+            <span class="input-with-icon">
+              <svg role="img"><use xlink:href="assets/sprite.svg#calendar-full"></use></svg>
+              <input type="text" id='end-date' placeholder="Sat Jul 21 2018" name='project-end-date' readonly>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="range-container project-budget">
+        <label for="range"><span>What is your budget?</span></label>
+        <div id="range"></div>
+        <input type="number" id="min-budget" hidden name='min-budget'>
+        <input type="number" id="max-budget" hidden name='max-budget'>
+      </div>
+
+
+      <label for="message-textarea" name="subject_label"><span>Additional info</span>
+        <textarea id="message-textarea" name="message" rows="8" cols="80" placeholder="Tell something about subject you choosed."></textarea>
+      </label>
+
+      <div class="form-subtitle">Additional Files(up to 3)</div>
+      <div class="row upload-row">
+        <div class="grid-1-3">
+          <label for="upload-file" id="custom-upload" class="custom-upload">
+            <svg role="img" class="upload-icon"><use xlink:href="assets/sprite.svg#upload"></use></svg>
+              <input type="file" id=upload-file name=file-1>
+              <p class="upload-text">Upload file</p>
+          </label>
+        </div>
+
+        <div class="grid-1-3" style="display:none;">
+          <label for="upload-file2" id="custom-upload2" class="custom-upload">
+            <svg role="img" class="upload-icon"><use xlink:href="assets/sprite.svg#upload"></use></svg>
+              <input type="file" id=upload-file2 name=file-2>
+              <p class="upload-text">Upload file</p>
+          </label>
+        </div>
+
+        <div class="grid-1-3" style="display:none;">
+          <label for="upload-file3" id="custom-upload3" class="custom-upload">
+            <svg role="img" class="upload-icon"><use xlink:href="assets/sprite.svg#upload"></use></svg>
+              <input type="file" id=upload-file3 name=file-3>
+              <p class="upload-text">Upload file</p>
+          </label>
+        </div>
+      </div>
+
+
+
+      <div class="row agrement-row">
+        <label for="agreement-checkbox">
+        <span class="custom-checkbox-wrapper">
+        <label for="agreement-checkbox" class="custom-checkbox">
+          <input type="checkbox" name="agreement" id="agreement-checkbox" hidden required>
+          <span class="custom-checkbox-inside"></span>
+        </label>
+        </span>
+        <span class='agreement-text'>I agree to process my name and email in order to respond to a query submitted in accordance with <a href="#">regulations for the processing of personal data
+</a>.</span>
+        </label>
+      </div>
+
+      <input class="btn btn-animate btn-purple mar-top-s" type="submit" value="Send">
+    </form>
+  </div>
+</div>

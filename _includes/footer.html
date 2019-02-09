@@ -1,0 +1,47 @@
+</section>
+
+<footer class="footer mar-top-b clearfix">
+  <div class="row">
+    <div class="grid-2-4 footer-menu">
+      <ul>
+        <li><a href="#">Cookie policy</a></li>
+        <li><a href="#">Processing of personal data</a></li>
+        <li><a href="#">Copyrights</a></li>
+      </ul>
+    </div>
+    <div class="grid-2-4 copyright">
+      <p class="float-right">&copy; 2018 made with <svg role="img"><use xlink:href="/assets/sprite.svg#heart"></use></svg> by Dawid Mazewski. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-information">
+  <p>This site uses cookies to provide services at the highest level. Further use of the site means that you agree to their use.</p>
+  <div role=button class="btn btn-purple btn-animate" id=cookie-agree>Agree</div>
+</div>
+
+{% if page.name == 'resume.html' %}
+<div class="right-sticky">
+    <span class="speech-bubble">Download resume in pdf</span>
+
+    <a href="Profile.pdf">
+      <svg role="img">
+        <use xlink:href="assets/sprite.svg#download"></use>
+      </svg>
+    </a>
+  </div>
+{% endif %}
+
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/main.js" charset="utf-8"></script>
+
+{% if page.name == 'index.html' %}
+  <canvas id="hoverballs" style="top: 0; left: 0; bottom:0; right:0;position: fixed; z-index: -1;"></canvas>
+{% endif %}
+
+{% include script-manager.html %}
+
+</body>
+</html>

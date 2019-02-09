@@ -1,0 +1,55 @@
+---
+#main scss file that will be converted to css
+---
+
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/mediaquery';
+
+@import 'general/normalize';
+@import 'general/general';
+
+@import 'additional/nouislider';
+@import 'additional/simplelightbox';
+
+@import 'animations/loader-animations';
+@import 'animations/pulsing';
+@import 'animations/puff-in-center';
+@import 'animations/ken-burns';
+
+@import 'pages/resume';
+@import 'pages/resources';
+
+@import 'layout/main-header';
+@import 'layout/main-nav';
+@import 'layout/footer';
+@import 'layout/contact-form';
+@import 'layout/cookie-information';
+@import 'layout/show-menu';
+
+@import 'components/scrollbar';
+@import 'components/button';
+@import 'components/logo';
+@import 'components/grid';
+@import 'components/box';
+@import 'components/project_box';
+@import 'components/contact_box';
+@import 'components/gallery_box';
+@import 'components/heading';
+@import 'components/icon-link';
+@import 'components/external-link';
+@import 'components/switch';
+@import 'components/before-load';
+@import 'components/custom-checkbox';
+@import 'components/noUiSlider';
+@import 'components/custom-upload';
+@import 'components/pikaday';
+@import 'components/close';
+@import 'components/right-sticky';
+@import 'components/resource-box';
+@import 'components/gradient-background';
+@import 'components/speech-bubble';
+@import 'components/fancy-gallery-grid';
+
+@import 'utilities/utilities';

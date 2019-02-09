@@ -1,0 +1,43 @@
+.about-row {
+  margin-bottom: 10rem;
+  text-align: center;
+
+  .heading {margin-bottom: 2rem;}
+
+}
+
+.heading-row {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  .heading {margin-bottom: 1rem;}
+  .heading, .heading-desc {text-align: center;}
+}
+
+.resource-box {
+  &-wrapper {
+    @media screen and (max-width: 860px){
+      width: 100% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+
+  @media screen and (max-width: 860px){
+    max-width: 450px;
+    margin: 1.5rem auto;
+  }
+  padding: 1rem;
+  margin-bottom: 3rem;
+  .icon {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    height: 6.4rem;
+    img{width: 6.4rem;}
+  }
+
+  .heading {margin-bottom: 1.5rem; text-align: center;}
+  .heading a {text-decoration: none; color: white; letter-spacing: 4px;}
+
+  .desc{font-size: 1.4rem; color: $color2; text-align: center;}
+}

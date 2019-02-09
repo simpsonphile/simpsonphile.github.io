@@ -1,0 +1,115 @@
+#contact-form:target {display: flex;}
+#contact-form:target .form-container{  animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;}
+
+.contact-form {
+  transition: all 0.3s;
+  position: fixed;
+  background: rgba(0,0,0,0.9);
+  z-index: 103;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  .form-container {border-radius: .8rem;margin-top: 3rem; margin-bottom: 3rem; max-height: calc(100vh - 60px); margin-right:-10px; overflow-y: auto;}
+
+  form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    background: $color1;
+    @include box-shadow;
+
+
+    .row {margin-left: -.5rem; margin-right: -.5rem;}
+    .project-budget {margin-bottom: 2rem; border-bottom: 1px solid lighten($color1, 20);}
+    .depended-inputs {margin: 6rem 0 0 0;}
+    .depended-inputs-content {
+      padding: 2rem 0;
+      padding-bottom: 0px;
+      border-top: 1px solid lighten($color1, 20);
+    }
+
+    .form-subtitle span {color: $color5;}
+
+    .form-subtitle {font-size: 1.2rem; margin-bottom: 0.5rem; text-transform: uppercase; color: $color-white; font-weight: 700;}
+    .form-subtitle-bigger {font-size: 1.4rem; margin-bottom: 0.5rem;}
+    .radiogroup {display: flex; justify-content: center;text-align: center; margin-bottom: 1rem;
+      .radio-with-text {padding: 0 8px; align-items: center; width: 8rem; margin-bottom: .5rem;
+        .radio-text {font-size: 1rem; text-transform: none;}
+      }
+    }
+    label {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+      position: relative;
+
+      label {margin-bottom: 0;}
+      .input-with-icon {position: relative; width: 100%;}
+      svg {position: absolute; top: 50%; transform: translateY(-50%); margin-top: -3px; margin-left: 1rem;}
+      span {font-size: 1.2rem; margin-bottom: 0.5rem; text-transform: uppercase; color: $color-white; font-weight: 700;}
+      .agreement-text {font-size: 0.9rem; font-weight: 300; padding-right: 1rem;}
+      input, textarea, select {
+        width: 100%;
+        padding: 1rem 1rem 1rem 4.2rem;
+        outline: none;
+        border: none;
+        font-family: inherit;
+        font-size: 1.4rem;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        border-top-left-radius: 6px;
+        background: rgba(lighten($color1, 15), 0.8);
+        color: $color-white;
+        resize: none;
+        transition: all 0.3s;
+
+        &:focus {background: rgba(lighten($color1, 25), 0.8);}
+        &::placeholder {color: $color-grey-med;}
+      }
+      textarea {padding: 1rem;}
+    }
+
+    .row.agrement-row {
+      padding: 2rem 0;
+      border-top: 1px solid lighten($color1, 20);
+      border-bottom: 1px solid lighten($color1, 20);
+      display: flex;
+      justify-content: space-between;
+      label {
+        display: flex;
+        flex-direction: row;
+
+        span.agreement-text {font-size: 1.1rem; text-transform: lowercase; padding-left: 0.5rem;}
+        input {margin-right: 1rem;}
+      }
+    }
+
+    input[type="submit"]{margin-top: 3rem;}
+  }
+
+  @media screen and (max-width: 760px){
+    .form-container {margin-top: 0; margin-bottom: 0; max-height: 100%;}
+    form {max-width: unset; padding: 12rem;}
+  }
+
+  @media screen and (max-width: 660px){
+    form {padding: 6rem;}
+  }
+
+  @media screen and (max-width: 560px){
+    form {padding: 6rem 4rem;}
+    form .row.agrement-row {flex-direction: column; align-items: center;}
+  }
+
+  @media screen and (max-width: 420px){
+    .row.project-date .grid-2-4 {width: 100%;}
+  }
+}
