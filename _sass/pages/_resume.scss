@@ -1,26 +1,16 @@
 .resume-part {margin-bottom: 10rem;}
 .resume-right {
-  @media screen and (max-width: 850px){
-    width: calc(100% - 8rem) !important;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-  }
 
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 850px){
     width: 100% !important;
   }
 }
+
 .resume-left {
    height: 100%;
    padding-right: 2.5rem;
-   @media screen and (max-width: 850px){
-     position: absolute;
-     right: 0;
-     z-index: 99;
-     width: 180px !important;
-   }
 
-   @media screen and (max-width: 480px){
+   @media screen and (max-width: 850px){
      width: 100% !important;
      position: static;
      height: auto !important;
@@ -30,6 +20,7 @@
      margin-right: 0 !important;
    }
  }
+
 .sticky-heading {
   position: sticky;
   top: 5rem;
@@ -37,60 +28,12 @@
   border-bottom-left-radius: .8rem;
   border-top-right-radius: .8rem;
   @include box-shadow;
-
+  max-width: 320px;
+  @media screen and (max-width: 850px){padding: 1.75rem;}
   .svg-container {display: inline;}
   h2 {display: inline;}
-
-  @media screen and (max-width: 850px) and (min-width: 481px){
-    display: flex;
-    align-items: center;
-    border-radius: unset !important;
-    padding: 0;
-    width: 100%;
-    height: 4rem;
-    background: unset !important;
-    box-shadow: none;
-    overflow: hidden;
-    &:hover h2 {right: 0;}
-    h2 {width: 100%;transition: all .3s; position: relative; right: -100%; margin-right: 3rem; font-size: 1.4rem; padding: .5rem; border-top-left-radius: 1rem; border-bottom-left-radius: 1rem;}
-    .svg-container {
-      z-index: 2;
-      display: block;
-      position: absolute;
-      right: 0;
-      border-bottom-left-radius: .8rem;
-      border-top-right-radius: .8rem;
-      width: 4rem;
-      height: 4rem;
-      display: flex; align-items: center; justify-content: center;
-    }
-  }
-
-
-
-
-
-
-  &-purple{background-image: linear-gradient(120deg, darken($color5, 7), lighten($color5, 17));
-    @media screen and (max-width: 850px) and (min-width: 481px){
-      .svg-container {
-        background-image: linear-gradient(120deg, darken($color5, 7), lighten($color5, 17));
-      }
-      h2 {
-        background-image: linear-gradient(120deg, darken($color5, 2), lighten($color5, 12));
-      }
-    }
-  }
-  &-blue {background-image: linear-gradient(120deg, darken($color4, 7), lighten($color4, 17));
-    @media screen and (max-width: 850px) and (min-width: 481px){
-      .svg-container {
-        background-image: linear-gradient(120deg, darken($color4, 7), lighten($color4, 17))
-      }
-      h2 {
-        background-image: linear-gradient(120deg, darken($color4, 2), lighten($color4, 12));
-      }
-    }
-  }
+  &-purple{background-image: linear-gradient(120deg, darken($color5, 7), lighten($color5, 17));}
+  &-blue {background-image: linear-gradient(120deg, darken($color4, 7), lighten($color4, 17));}
 }
 
 
@@ -207,119 +150,29 @@
 
 .resume-part-3 .work-entry .work-description {padding-left: 0;}
 
-/*project entry*/
 
-.row .grid-1-3.project-entry-s {
-  @media screen and (max-width: 1000px){
-    width: calc(50% - #{$grid-gap} * 2);
-  }
-}
 .project-entry {
-  height:300px;
-  border-top-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  margin-bottom: 2rem;
-  position: relative;
-  overflow: hidden;
-  width:100%;
-  @include box-shadow;
-
-  @media screen and (max-width: 680px){
-    width: 100% !important;
-    height: 450px;
-    max-height: 80vh;
-    float: unset !important;
-    margin: 2rem 0 !important;
-  }
-
-  .project-background, .project-gradient {
-    position: absolute; z-index: 0;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .project-gradient {background-image:linear-gradient(135deg, rgba($color5,0.6), rgba($color4,0.6)); transition: all 1s; opacity: 1;}
-
-  &:hover {
-    .project-info {bottom: -20rem;}
-    .project-links{top: 0;}
-    .project-type {top: 0;}
-    .project-gradient {opacity: 0;}
-    @media screen and (max-width: 680px){
-      .project-info{bottom: 0;}
+  margin-bottom: 3.5rem;
+  .project-top {margin-bottom: 1rem; }
+  .project-title {font-size: 1.8rem; }
+  .project-tags {
+    margin: 1.5rem -0.5rem 1rem -0.5rem;
+    width: 100%;
+    .tag {display: inline-block; font-size: 1.2rem; padding: .5rem; font-weight: 700; border-radius: 1rem; margin: .5rem;}
+    .tag-purple {
+      background-color: $color5;
+      background:linear-gradient(120deg, #b91a4e, #e9638f)
+    }
+    .tag-blue {
+      background-color: $color4;
+      background-image: linear-gradient(120deg, #4190ac, #92c4d6);
     }
   }
-
-  &-scroll-bg .project-background{
-    background-size: 100%;
-    background-position: top;
-    transition: 10s all;
-  }
-
-  &-scroll-bg:hover .project-background {
-    background-position:bottom;
-  }
-
-  &-anim-ken:hover .project-background{
-    animation: kenburns-bottom 5s ease-out both;
-  }
-
-  .project-info {
-    background: rgba(25, 42, 86, 0.6);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-    min-height:10rem;
-    transition: all .3s;
-    .project-title {
-      margin-bottom: 2rem;
-    }
-    @media screen and (max-width: 680px){
-      min-height: unset;
-    }
-  }
-
-  &-s .project-info {min-height: 50%;
-    @media screen and (max-width: 680px){
-      min-height: unset;
-    }
-  }
-
+  .project-description {color: $color2; margin-bottom: .5rem;}
   .project-links {
-    background: rgba(25, 42, 86, 0.6);
-    position: absolute;
-    top: -20rem;
-    left:0;
-    display: flex;
-    padding: 1rem;
-    transition: all .3s;
-    border-bottom-right-radius: .8rem;
-    a {display: block; margin: .5rem;}
+    .project-link {display: block; margin: .5rem 0;}
   }
-
-  .project-type {
-    background: rgba(25, 42, 86, 0.6);
-    position: absolute;
-    top: -20rem;
-    right:0;
-    padding: 1rem;
-    transition: all .3s;
-    display: flex;
-  }
-
-  &-travello .project-background {background-image: url(../assets/img/travello-full.png);}
-  &-coolsolutions .project-background {background-image:url(../assets/img/coolsolutions-full.png);}
-  &-followballs .project-background {background-image:url(../assets/img/followballs.png);}
-  &-bbtan .project-background {background-image:url(../assets/img/bbtan.png);}
-  &-spaceship-game .project-background {background-image:url(../assets/img/spaceship-game.png);}
-
-
 }
-
-
 
 /*skillset*/
 .skills-list{
@@ -343,4 +196,9 @@
     margin-bottom: 3rem;
     .skill-name h4{font-size: 1.8rem; margin-bottom: 0.5rem;}
   }
+}
+
+.resume-part-skillset .resume-right,
+.resume-part-additional .resume-right {
+  margin: 0.5rem -1.25rem !important;
 }

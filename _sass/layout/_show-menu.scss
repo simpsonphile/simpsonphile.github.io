@@ -59,3 +59,10 @@
   #show-menu:checked ~ .main-nav {visibility: visible !important; display: flex !important; right: 0 !important; opacity: 1;}
   #show-menu:checked ~ .show-menu-btn {position: fixed;}
 }
+
+@media screen and (max-width: 680px){
+  .show-menu-btn {
+    right: 2rem;
+    
+  }
+}
