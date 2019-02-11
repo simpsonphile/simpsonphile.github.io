@@ -1,19 +1,36 @@
 {% include header.html %}
 <div class="row">
-  <h1 class="heading">{{page.title}}</h1>
-  <span class="date">{{page.date}}</span>
-  {{content}}
-</div>
+  <article class="post-entry">
+    <h1 class="heading"><a href="{{page.url}}">{{page.title}}</a></h1>
+    <div class="post-meta">
+      <time class="date">{{ page.date | date: '%B %d, %Y' }}</time>
 
-<div class="row">
-  <div class="post-meta">
-    <div class="prev-post">
-      {{ page.previous.title }}
-    </div>
+      <ul class="post-categories">
+        {% for cat in page.categories %}
+          <li>{{cat}}</li>
+        {% endfor %}
+      </ul>
 
-    <div class="next-post">
-      {{ page.next.title }}
+      <ul class="post-tags">
+        {% for tag in page.tags %}
+          <li>#{{tag}}</li>
+        {% endfor %}
+      </ul>
+
     </div>
+    <div class="post-excerpt">{{content}}</div>
+  </article>
+
+  <div class="post-navigation">
+    <a href="/blog" class="btn">back to blog</a>
+
+    {% if page.previous %}
+    <a href="{{page.previous.url}}" title={{page.previous.title}} class="btn btn-purple">previous post</a>
+    {% endif %}
+
+    {% if page.next %}
+    <a href="{{page.next.url}}" class="btn btn-purple" title={{page.next.title}}>next post</a>
+    {% endif %}
   </div>
 </div>
 

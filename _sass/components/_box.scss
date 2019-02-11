@@ -28,7 +28,6 @@
 }
 
 .social-box {
-  // background: linear-gradient(290deg, rgba($color1, 1), rgba($color5, 1));
   background: $color4;
   background-image:linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url(../assets/img/social.svg), linear-gradient(lighten($color4,10), darken($color4, 10));
   background-size: cover;
@@ -61,11 +60,6 @@
   .icons-row {
     margin: 1rem -1rem;
     .btn {margin: 0 1rem;}
-
-    // @media screen and (max-width: 900px){
-    //   display: flex; flex-direction: column; justify-content: center; align-items: center;
-    //   .btn {margin: .5rem; width: 100%;}
-    // }
 
     @media screen and (max-width: 680px){
       display: flex;
